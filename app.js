@@ -10,7 +10,7 @@ function renderTasks() {
     taskTable.innerHTML = '';
     tasks.forEach((task, index) => {
         const row = document.createElement("tr");
-        row.classList.add("border-b", "border-b-stone-800", "text-[13px]", "hover:bg-neutral-700", "hover:text-white");
+        row.classList.add("border-b", "border-b-stone-800", "text-[13px]");
         
         row.innerHTML = `
             <td class="p-2">${index + 1}</td>
