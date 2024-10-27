@@ -16,7 +16,7 @@ function renderTasks() {
             <td class="p-2">${index + 1}</td>
             <td>${task.name}</td>
             <td>
-                <select onchange="updateStatus(${index})" class="border rounded px-2 hover:text-black">
+                <select onchange="updateStatus(${index})" class="border rounded px-2 text-black hover:text-black">
                     <option value="Todo" ${task.status === 'Todo' ? 'selected' : ''}>Todo</option>
                     <option value="In progress" ${task.status === 'In progress' ? 'selected' : ''}>In progress</option>
                     <option value="Complete" ${task.status === 'Complete' ? 'selected' : ''}>Complete</option>
